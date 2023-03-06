@@ -1,0 +1,11 @@
+{
+    "entryPoints": [
+        "./src/ejercicio-1/artista.ts", 
+        "./src/ejercicio-1/biblioteca.ts",
+        "./src/ejercicio-1/cancion.ts",
+        "./src/ejercicio-1/disco.ts",
+        "./src/ejercicio-1/discografia.ts",
+        "./src/ejercicio-2/tablero.ts"
+    ],
+    "out": "./docs"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "ull-esit-inf-dsi-22-23-prct05-objects-classes-interfaces-alu0101333588",
+  "version": "1.0.0",
+  "description": "ull-esit-inf-dsi-22-23-prct05-objects-classes-interfaces-alu0101333588 created by GitHub Classroom",
+  "main": "tablero.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/ejercicio-2/tablero.js\"",
+    "doc": "typedoc",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct05-objects-classes-interfaces-alu0101333588.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct05-objects-classes-interfaces-alu0101333588/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct05-objects-classes-interfaces-alu0101333588#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/prompt-sync": "^4.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.0",
+    "typedoc": "^0.23.26"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
