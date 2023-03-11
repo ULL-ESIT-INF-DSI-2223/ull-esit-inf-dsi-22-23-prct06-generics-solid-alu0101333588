@@ -1,5 +1,6 @@
 dist
 tests
+.nyc_output
 .eslintrc.json
 .pretterignore
 .prettierrc.json
