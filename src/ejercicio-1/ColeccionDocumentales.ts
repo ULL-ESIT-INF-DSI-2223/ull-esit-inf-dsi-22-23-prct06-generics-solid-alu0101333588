@@ -61,13 +61,13 @@ export class ColeccionDocumentales extends BasicStreamableCollection<Documental>
 
     /**
     * Función para realizar busquedas por temática-género
-    * @param genero el género del contenido a buscar
+    * @param tema el género del contenido a buscar
     * @returns array de tipo Documental
     */
-    busquedaporTematica(genero : string) : Documental[] {
+    busquedaporTematica(tema : string) : Documental[] {
         let salida : Documental[] = [];
         for (let i : number = 0; i < this.coleccion_.length; i++) {
-            if (this.coleccion_[i].tematica_ === genero) {
+            if (this.coleccion_[i].tematica_ === tema) {
                 salida.push(this.coleccion_[i]);
             }
         }

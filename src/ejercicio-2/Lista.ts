@@ -13,10 +13,21 @@ export class Lista<T> {
         this.lista_ = lista;
     }
 
+    /**
+    * Getter para obtener los valores del atributo lista_
+    * @return lista : array de tipo genérico T
+    */
     get get_lista () {
         return this.lista_;
     }
 
+    /**
+    * Función para obtener el valor de una posición concreta
+    * del atributo lista_
+    * @param n : number, es el índice de la posición donde
+    * se encuentra el valor a obtener del atributo
+    * @return T, tipo genérico T.
+    */
     elemento_lista (n : number) : T {
         return this.lista_[n];
     }
@@ -135,7 +146,7 @@ export class Lista<T> {
 
     /**
     * Función 'forEach' que dada una lista,
-    * devuelva una lista ocn los elementos originales en orden inverso
+    * devuelva un valor después de aplicar la condición indicada
     * @param funcion con las instrucciones : callback
     * @return array de tipo genérico T
     */
@@ -157,7 +168,6 @@ let lista_prueba_2 : Lista<number> = new Lista<number> ([30, 31, 32, 33, 34, 35,
 let lista_prueba_3 : Lista<number> = new Lista<number> ([40, 41, 42, 43, 44, 45, 46, 47]);
 let lista_prueba_4 : Lista<number> = new Lista<number> ([50, 51, 52, 53, 54, 55, 56, 57]);
 console.log(`append: [${lista_prueba.append(lista_prueba_2)}]`);
-
 let listas_para_concatenar: Lista<number>[] = [];
 listas_para_concatenar.push(lista_prueba_2);
 listas_para_concatenar.push(lista_prueba_3);
@@ -168,3 +178,5 @@ console.log(`length(): [${lista_prueba_2.length()}]`);
 console.log(`map(): [${lista_prueba_2.map((elemento) => elemento * 2)}]`);
 console.log(`reduce(): [${lista_prueba_2.reduce((acumulador, elemento) => acumulador + elemento, 2)}]`);
 console.log(`reverse(): [${lista_prueba_2.reverse()}]`);
+let numero : number = 1;
+console.log(`forEach(): [${lista_prueba_2.forEach((elemento) => numero *= elemento)}]`);

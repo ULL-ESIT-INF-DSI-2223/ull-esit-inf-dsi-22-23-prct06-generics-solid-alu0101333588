@@ -30,8 +30,8 @@ export interface Streamable<T> {
 
     /**
     * Función para realizar busquedas por temática-género
-    * @param genero el género del contenido a buscar
+    * @param tema el tema del contenido a buscar
     * @returns array de tipo genérico T
     */
-    busquedaporTematica(genero : string) : T[];
+    busquedaporTematica(tema : string) : T[];
 }

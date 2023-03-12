@@ -43,10 +43,10 @@ export abstract class BasicStreamableCollection<T> implements Streamable<T> {
 
     /**
     * Función para realizar busquedas por temática-género
-    * @param genero el género del contenido a buscar
+    * @param tema el género del contenido a buscar
     * @returns array de tipo genérico T
     */
-    abstract busquedaporTematica(genero : string) : T[];
+    abstract busquedaporTematica(tema : string) : T[];
 
     /**
     * Función para Añadir contenido a la colección
