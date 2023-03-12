@@ -126,7 +126,7 @@ Se desarrollan cuatro interfaces y cuatro clases:
 
 A continuación, se procede a mostrar el resultado de las diferentes pruebas llevadas a cabo en las funciones de todas las clases que se han empleado en este ejercicio:
 
-![Ejercicio-1](img/Captura%20desde%202023-03-05%2015-43-16.png)
+![Ejercicio-1](/img/Captura%20desde%202023-03-12%2020-05-24.png)
 
 
 ### 2. Implementación de una lista y sus operaciones
@@ -166,17 +166,17 @@ La solución propuesta es la siguiente:
 
 #### Pruebas
 
-![Ejercicio-2.1](img/Captura%20desde%202023-03-05%2018-43-22.png)
+![Ejercicio-2.1](/img/Captura%20desde%202023-03-12%2020-27-15.png)
 
 Se han llevado a cabo una serie de pruebas con todas y cada una de las funciones desarrolladas. Por desgracia la mayoría de ellas pese a que retornar lo mismo que se le indica en el código de los tests retornan error pese a tener que dar como correcto el resultado.
 
-![Ejercicio-2.2](img/Captura%20desde%202023-03-05%2018-43-22.png)
+![Ejercicio-2.2](/img/Captura%20desde%202023-03-12%2020-28-20.png)
 
 Por ejemplo, en la prueba de la función `filter` se esperaba como resultado un `23` y se indico `23`. 
 
 No obstante, se han desarrollado pruebas pese a este inconveniente en la realización de los tests, se emplea para ello los `console.log()` pertinentes en la propia función:
 
-![Ejercicio-2.3](img/Captura%20desde%202023-03-05%2018-25-10.png)
+![Ejercicio-2.3](/img/Captura%20desde%202023-03-12%2020-31-20.png)
 
 
 ### 3. Ampliando la biblioteca musical
@@ -193,9 +193,9 @@ Estos son algunas de las modifaciones que se han llevado a cabo en el programa.
 
 Las pruebas realizadas dan éxito: 
 
-![Ejercicio-3.1](img/Captura%20desde%202023-03-05%2018-25-10.png)
+![Ejercicio-3.1](/img/Captura%20desde%202023-03-12%2020-37-18.png)
 
-![Ejercicio-3.2](img/Captura%20desde%202023-03-05%2018-25-10.png)
+![Ejercicio-3.2](/img/Captura%20desde%202023-03-12%2020-37-31.png)
 
 
 ## Conclusiones
