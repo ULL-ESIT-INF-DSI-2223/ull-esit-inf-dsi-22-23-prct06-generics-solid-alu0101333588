@@ -8,12 +8,18 @@ import { Disco } from "../../src/ejercicio-3/disco";
 import { Single } from "../../src/ejercicio-3/single";
 
 describe("Test Clase Single", () => {
+  let cancion_prueba: Cancion = new Cancion(
+    "El gallo sube",
+    3,
+    ["clasicas", "pop"],
+    true,
+    120000
+  );
+  let conjunto_canciones_prueba: Cancion[] = [cancion_prueba];
+  let single_prueba: Single = new Single("El gallo sube", 1999, [
+    cancion_prueba,
+  ]);
 
-
-  let cancion_prueba: Cancion = new Cancion("El gallo sube", 3, ["clasicas", "pop"], true, 120000);
-  let conjunto_canciones_prueba : Cancion[] = [cancion_prueba];
-  let single_prueba : Single = new Single ("El gallo sube", 1999, [cancion_prueba]);
-  
   it("get nombre ()", () => {
     expect(single_prueba.nombre).to.be.eql("El gallo sube");
   });
@@ -34,9 +40,7 @@ describe("Test Clase Single", () => {
     expect(single_prueba.numero_versiones()).to.be.eql(1);
   });
 
-
   it("reproducciones_disco ()", () => {
     expect(single_prueba.reproducciones()).to.be.eql(120000);
   });
-
 });

@@ -17,13 +17,12 @@ export class Biblioteca {
     this.artistas_ = artistas_entrantes;
   }
 
-
   /**
    * Buscador de Artistas
    * @param nombre nombre del artista
    * @return si ese artista está en la librería o no
    */
-  BuscarArtista(nombre: string) : string | boolean {
+  BuscarArtista(nombre: string): string | boolean {
     let numero_artistas: number = this.artistas_.length;
     for (let i: number = 0; i < numero_artistas; i++) {
       let nombre_artista: string = this.artistas_[i].nombre;
@@ -35,6 +34,4 @@ export class Biblioteca {
     }
     return false;
   }
-
-
 }

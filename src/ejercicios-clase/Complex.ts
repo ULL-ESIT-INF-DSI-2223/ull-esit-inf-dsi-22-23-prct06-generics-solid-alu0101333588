@@ -62,8 +62,7 @@ import { ArithmeticableCollection } from "./ArithmeticableCollection";
 
 }*/
 
-
 //let operaciones : ArithmeticableCollection<Complex> (2,3);
-//let operaciones : Complex = new Complex([2,3]); 
+//let operaciones : Complex = new Complex([2,3]);
 
 //let operaciones2 : ArithmeticableCollection<Complex> = new ArithmeticableCollection<Complex> ([2,3]);

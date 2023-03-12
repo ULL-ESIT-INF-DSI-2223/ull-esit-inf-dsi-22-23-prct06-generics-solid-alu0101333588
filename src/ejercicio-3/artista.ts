@@ -9,7 +9,7 @@ import { Single } from "./single";
  * numero_oyentes_mensuales : de tipo number, el número total de oyentes mensuales del artista
  * discografia_ : alberga la discografía del artista, es un objeto de la clase 'Discografía'
  */
-export class Artista <T extends Single | Disco> {
+export class Artista<T extends Single | Disco> {
   private nombre_: string;
   private numero_oyentes_mensuales_: number;
   private discografia_: Discografia<T>;
@@ -53,5 +53,4 @@ export class Artista <T extends Single | Disco> {
   get discografia(): Discografia<T> {
     return this.discografia_;
   }
-
 }

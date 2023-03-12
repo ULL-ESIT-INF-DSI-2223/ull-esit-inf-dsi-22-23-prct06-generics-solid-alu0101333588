@@ -6,7 +6,7 @@ import { Single } from "./single";
  * Los atributos de la clase son:
  * recursos_: conjunto de recursos
  */
-export class Discografia <T extends Single | Disco> {
+export class Discografia<T extends Single | Disco> {
   private recursos_: T[];
 
   /**

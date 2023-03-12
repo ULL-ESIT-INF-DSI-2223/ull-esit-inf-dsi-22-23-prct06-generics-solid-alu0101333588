@@ -1,7 +1,7 @@
 export type fecha = [number, string, number];
 
 /**
- * Interfaz 'Serie' 
+ * Interfaz 'Serie'
  * @param titulo_ de la serie
  * @param fecha_ de la serie
  * @param sinopsis_ de la serie
@@ -12,12 +12,12 @@ export type fecha = [number, string, number];
  * @param personajes_ de la serie
  */
 export interface Serie {
-    titulo_ : string;
-    fecha_ : fecha;
-    sinopsis_ :string;
-    tematica_ : string;
-    plataforma_: string;
-    temporadas_ : number;
-    capitulos_ : number;
-    personajes_ : string[];
+  titulo_: string;
+  fecha_: fecha;
+  sinopsis_: string;
+  tematica_: string;
+  plataforma_: string;
+  temporadas_: number;
+  capitulos_: number;
+  personajes_: string[];
 }

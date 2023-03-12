@@ -7,7 +7,13 @@ import { Discografia } from "../../src/ejercicio-3/discografia";
 import { Disco } from "../../src/ejercicio-3/disco";
 
 describe("Test Clase Cancion", () => {
-  let cancion_prueba: Cancion = new Cancion("El gallo sube", 3, ["clasicas", "pop"], true, 120000);
+  let cancion_prueba: Cancion = new Cancion(
+    "El gallo sube",
+    3,
+    ["clasicas", "pop"],
+    true,
+    120000
+  );
   it("get numero_reproducciones()", () => {
     expect(cancion_prueba.numero_reproducciones).to.be.eql(120000);
   });

@@ -1,6 +1,8 @@
 ###### Desarrollo de Sistemas Informáticos | Práctica 06 | Andrés Hernández Ortega
 # Práctica 6 - Clases e interfaces genéricas. Principios SOLID
 
+[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588/badge.svg?branch=master)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588?branch=master)
+
 ## Introducción
 
 Continuando con los conceptos del lenguaje de programación, TypeScript, procederemos a realizar una nueva práctica, en esta ocasión la número seis en la que seguiremos con los conceptos de las clases, profundizando en las interfaces genéricas y los principios SOLID para tener un código mucho más limpio y de calidad.

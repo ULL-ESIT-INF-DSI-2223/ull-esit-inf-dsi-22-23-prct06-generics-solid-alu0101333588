@@ -1,6 +1,6 @@
 import { fecha } from "./Serie";
 /**
- * Interfaz 'Pelicula' 
+ * Interfaz 'Pelicula'
  * @param titulo_ de la película
  * @param fecha_ de la película
  * @param sinopsis_ de la película
@@ -10,11 +10,11 @@ import { fecha } from "./Serie";
  * @param duracion_ de la película
  */
 export interface Pelicula {
-    titulo_ : string;
-    fecha_ : fecha;
-    sinopsis_ :string;
-    tematica_ : string;
-    plataforma_: string;
-    duracion_ : number;
-    reparto_ : string[];
+  titulo_: string;
+  fecha_: fecha;
+  sinopsis_: string;
+  tematica_: string;
+  plataforma_: string;
+  duracion_: number;
+  reparto_: string[];
 }

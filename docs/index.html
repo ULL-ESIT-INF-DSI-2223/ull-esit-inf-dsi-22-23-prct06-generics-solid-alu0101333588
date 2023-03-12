@@ -1,0 +1,270 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588</title><meta name="description" content="Documentation for ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-page-title">
+<h2>ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588</h2></div>
+<div class="tsd-panel tsd-typography">
+<a href="#desarrollo-de-sistemas-informáticos--práctica-06--andrés-hernández-ortega" id="desarrollo-de-sistemas-informáticos--práctica-06--andrés-hernández-ortega" style="color: inherit; text-decoration: none;">
+  <h6>Desarrollo de Sistemas Informáticos | Práctica 06 | Andrés Hernández Ortega</h6>
+</a>
+
+<a href="#práctica-6---clases-e-interfaces-genéricas-principios-solid" id="práctica-6---clases-e-interfaces-genéricas-principios-solid" style="color: inherit; text-decoration: none;">
+  <h1>Práctica 6 - Clases e interfaces genéricas. Principios SOLID</h1>
+</a>
+
+<a href="#introducción" id="introducción" style="color: inherit; text-decoration: none;">
+  <h2>Introducción</h2>
+</a>
+<p>Continuando con los conceptos del lenguaje de programación, TypeScript, procederemos a realizar una nueva práctica, en esta ocasión la número seis en la que seguiremos con los conceptos de las clases, profundizando en las interfaces genéricas y los principios SOLID para tener un código mucho más limpio y de calidad.</p>
+<p>Además, en esta ocasión introduciremos las herramientas Instanbul y Coveralls.</p>
+
+<a href="#ejercicios" id="ejercicios" style="color: inherit; text-decoration: none;">
+  <h2>Ejercicios</h2>
+</a>
+
+<a href="#1-dsiflix" id="1-dsiflix" style="color: inherit; text-decoration: none;">
+  <h3>1. Dsiflix</h3>
+</a>
+<p>Se requiere la creación de un modelo de datos de una plataforma de vídeo en streaming, concretamente en su catálogo de contenidos, que pueden ser películas, series y documentales.</p>
+<p>La solución propuesta es la siguiente:</p>
+<p>Se desarrollan cuatro interfaces y cuatro clases:</p>
+<p><strong>Interfaz Streamable<T></strong></p>
+<ul>
+<li>La interfaz de tipo genérica <code>Streamable&lt;T&gt;</code>  posee cuatro funcionalidades:<ul>
+<li><code>busquedaporAno</code> que recibe un <code>number</code> y servirá para realizar busquedas de contenido por año. Devuelve un array de tipo genérico T.</li>
+<li><code>busquedaporNombre</code> que recibe un <code>string</code> y servirá para realizar busquedas de contenido por nombre. Devuelve un tipo genérico T o boolean.</li>
+<li><code>busquedaporPlataforma</code> que recibe un <code>string</code> y servirá para realizar busquedas de contenido por plataforma de contenidos. Devuelve un array de tipo genérico T.</li>
+<li><code>busquedaporTematica</code> que recibe un <code>string</code> y servirá para realizar busquedas de contenido por temática de contenidos. Devuelve un array de tipo genérico T.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Interfaz Serie</strong></p>
+<ul>
+<li>La interfaz <code>Serie</code>  posee ocho atributos:<ul>
+<li><code>titulo_</code> de tipo <code>string</code> es el título del contenido.</li>
+<li><code>fecha_</code> de tipo <code>fecha</code> (que es un <code>type</code> creado que contiene tres elementos: <code>number</code>, <code>string</code> y <code>number</code>) para denotar la fecha de emisión del contenido.</li>
+<li><code>sinopsis_</code> de tipo <code>string</code> alberga la sinopsis del contenido.</li>
+<li><code>tematica_</code> de tipo <code>string</code> alberga la categoría del contenido.</li>
+<li><code>plataforma</code> de tipo <code>string</code> indica la plataforma de contenidos a la que pertenece.</li>
+<li><code>temporadas_</code> de tipo <code>number</code> y que indica cuántas temporadas tiene la serie.</li>
+<li><code>capitulos_</code> de tipo <code>number</code>, indica el número de capítulos totales que tiene la serie.</li>
+<li><code>personajes</code> de tipo <code>string[]</code>, alberga los personajes de la serie.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Interfaz Pelicula</strong></p>
+<ul>
+<li>La interfaz <code>Pelicula</code>  posee ocho atributos:<ul>
+<li><code>titulo_</code> de tipo <code>string</code> es el título del contenido.</li>
+<li><code>fecha_</code> de tipo <code>fecha</code> (que es un <code>type</code> creado que contiene tres elementos: <code>number</code>, <code>string</code> y <code>number</code>) para denotar la fecha de emisión del contenido.</li>
+<li><code>sinopsis_</code> de tipo <code>string</code> alberga la sinopsis del contenido.</li>
+<li><code>tematica_</code> de tipo <code>string</code> alberga la categoría del contenido.</li>
+<li><code>plataforma</code> de tipo <code>string</code> indica la plataforma de contenidos a la que pertenece.</li>
+<li><code>duracion_</code> de tipo <code>number</code> y que indica cuanto dura la película.</li>
+<li><code>reparto_</code> de tipo <code>string[]</code>, alberga los actores y actrices de la película.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Interfaz Documental</strong></p>
+<ul>
+<li>La interfaz <code>Documental</code>  posee ocho atributos:<ul>
+<li><code>titulo_</code> de tipo <code>string</code> es el título del contenido.</li>
+<li><code>fecha_</code> de tipo <code>fecha</code> (que es un <code>type</code> creado que contiene tres elementos: <code>number</code>, <code>string</code> y <code>number</code>) para denotar la fecha de emisión del contenido.</li>
+<li><code>sinopsis_</code> de tipo <code>string</code> alberga la sinopsis del contenido.</li>
+<li><code>tematica_</code> de tipo <code>string</code> alberga la categoría del contenido.</li>
+<li><code>plataforma</code> de tipo <code>string</code> indica la plataforma de contenidos a la que pertenece.</li>
+<li><code>duracion_</code> de tipo <code>number</code> y que indica cuanto dura el documental.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Clase abstracta BasicStreamableCollection<T></strong></p>
+<ul>
+<li><p>La clase abstracta <code>BasicStreamableCollection&lt;T&gt;</code>  de tipo genérica, implementa la interfaz <code>Streamable&lt;T&gt;</code></p>
+</li>
+<li><p>Posee un único atributo privado denominado <code>coleccion_</code> que es un array de tipo genérico <code>T</code>. Alberga la colección de contenido que será heredada por las clases hijas.</p>
+</li>
+<li><p>Tiene un constructor que recibe un array de tipo genérico <code>T</code> y lo establece como valor al atributo privado.</p>
+</li>
+<li><p>Posee cuatro funciones abstractas que son las que están enunciadas en la interfaz <code>Streamable&lt;T&gt;</code>:</p>
+<ul>
+<li><code>busquedaporNombre</code></li>
+<li><code>busquedaporAno</code></li>
+<li><code>busquedaporPlataforma</code></li>
+<li><code>busquedaporTematica</code></li>
+</ul>
+</li>
+<li><p>Desarrolla una función <code>anadir_contenido</code> que recibe un valor de tipo genérico <code>T</code> y lo añade al atributo privado de la clase.</p>
+</li>
+</ul>
+<p><strong>Clase ColeccionDocumentales</strong></p>
+<ul>
+<li><p>La clase <code>ColeccionDocumentales</code> es una extensión de la clase abstracta <code>BasicStreamableCollection</code> que es de tipo <code>Documental</code>.</p>
+</li>
+<li><p>Posee un constructor que recibe un array de tipo <code>Documental</code> y lo establece como atributo privado <code>coleccion_</code>.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporNombre</code> que recibe un <code>string</code> y realiza un recorrido buscando si el nombre del contenido existe o no. Si existe retorna el contenido de tipo <code>Documental</code>, en caso contrario retorna un <code>false</code>.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporAno</code> que recibe un <code>number</code> y realiza un recorrido buscando si el año del contenido existe o no. Si existe retorna todos los contenidos que se han emitido en dicho año a través de un array de tipo <code>Documental</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporPlataforma</code> que recibe un <code>string</code> y realiza un recorrido buscando si hay contenidos relacionados con dicha plataforma. Si existe retorna todos los contenidos que se han emitido en dicha plataforma a través de un array de tipo <code>Documental</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporTematica</code> que recibe un <code>string</code> y realiza un recorrido buscando si el tema del contenido existe o no. Si existe retorna todos los contenidos que se han emitido con dicha temática a través de un array de tipo <code>Documental</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+</ul>
+<p><strong>Clase ColeccionPeliculas</strong></p>
+<ul>
+<li><p>La clase <code>ColeccionPeliculas</code> es una extensión de la clase abstracta <code>BasicStreamableCollection</code> que es de tipo <code>Pelicula</code>.</p>
+</li>
+<li><p>Posee un constructor que recibe un array de tipo <code>Pelicula</code> y lo establece como atributo privado <code>coleccion_</code>.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporNombre</code> que recibe un <code>string</code> y realiza un recorrido buscando si el nombre del contenido existe o no. Si existe retorna el contenido de tipo <code>Pelicula</code>, en caso contrario retorna un <code>false</code>.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporAno</code> que recibe un <code>number</code> y realiza un recorrido buscando si el año del contenido existe o no. Si existe retorna todos los contenidos que se han emitido en dicho año a través de un array de tipo <code>Pelicula</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporPlataforma</code> que recibe un <code>string</code> y realiza un recorrido buscando si hay contenidos relacionados con dicha plataforma. Si existe retorna todos los contenidos que se han emitido en dicha plataforma a través de un array de tipo <code>Pelicula</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporTematica</code> que recibe un <code>string</code> y realiza un recorrido buscando si el tema del contenido existe o no. Si existe retorna todos los contenidos que se han emitido con dicha temática a través de un array de tipo <code>Pelicula</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+</ul>
+<p><strong>Clase ColeccionSeries</strong></p>
+<ul>
+<li><p>La clase <code>ColeccionSeries</code> es una extensión de la clase abstracta <code>BasicStreamableCollection</code> que es de tipo <code>Serie</code>.</p>
+</li>
+<li><p>Posee un constructor que recibe un array de tipo <code>Serie</code> y lo establece como atributo privado <code>coleccion_</code>.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporNombre</code> que recibe un <code>string</code> y realiza un recorrido buscando si el nombre del contenido existe o no. Si existe retorna el contenido de tipo <code>Serie</code>, en caso contrario retorna un <code>false</code>.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporAno</code> que recibe un <code>number</code> y realiza un recorrido buscando si el año del contenido existe o no. Si existe retorna todos los contenidos que se han emitido en dicho año a través de un array de tipo <code>Serie</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporPlataforma</code> que recibe un <code>string</code> y realiza un recorrido buscando si hay contenidos relacionados con dicha plataforma. Si existe retorna todos los contenidos que se han emitido en dicha plataforma a través de un array de tipo <code>Serie</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporTematica</code> que recibe un <code>string</code> y realiza un recorrido buscando si el tema del contenido existe o no. Si existe retorna todos los contenidos que se han emitido con dicha temática a través de un array de tipo <code>Serie</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+<li><p>Desarrolla la función <code>busquedaporTemporadas</code> que recibe un <code>number</code> y realiza un recorrido buscando si los contenidos que poseen el número de temporadas indicadas. Si existen retorna todos los contenidos que se cumplan con dicho requisito a través de un array de tipo <code>Serie</code>, en caso contrario el array se imprimirá vacío.</p>
+</li>
+</ul>
+
+<a href="#tests" id="tests" style="color: inherit; text-decoration: none;">
+  <h4>Tests</h4>
+</a>
+<p>A continuación, se procede a mostrar el resultado de las diferentes pruebas llevadas a cabo en las funciones de todas las clases que se han empleado en este ejercicio:</p>
+<p><img src="img/Captura%20desde%202023-03-05%2015-43-16.png" alt="Ejercicio-1"></p>
+
+<a href="#2-implementación-de-una-lista-y-sus-operaciones" id="2-implementación-de-una-lista-y-sus-operaciones" style="color: inherit; text-decoration: none;">
+  <h3>2. Implementación de una lista y sus operaciones</h3>
+</a>
+<p>Se requiere implementar una clase genérica que emule el comportamiento de <code>list</code> empleando únicamente <code>[]</code>.</p>
+<p>La solución propuesta es la siguiente:</p>
+<p><strong>Clase Lista<T></strong></p>
+<ul>
+<li><p>La clase <code>Lista&lt;T&gt;</code> es de tipo genérico <code>T</code>.</p>
+</li>
+<li><p>Posee un atributo privado <code>lista_</code> que es un array de tipo genérico <code>T</code>.</p>
+</li>
+<li><p>Posee un constructor que recibe un array de contenido de tipo genérico <code>T</code> y lo establece como valor del atributo privado de la clase <code>lista_</code>.</p>
+</li>
+<li><p>Posee un <code>getter</code> para obtener los valores de la lista.</p>
+</li>
+<li><p>Posee una función <code>elemento_lista</code> para obtener el valor <code>T</code> de una posición concreta de la lista, recibiendo como parámetro el índice <code>n</code> de tipo <code>number</code>.</p>
+</li>
+<li><p>Posee una función <code>append</code> que recibe una lista y la recorre insertando sus valores al final del array del atributo de la clase, <code>lista_</code>.</p>
+</li>
+<li><p>Posee una función <code>concatenate</code> que recibe un array de listas y los recorre insertando sus valores al final del array del atributo de la clase, <code>lista_</code>.</p>
+</li>
+<li><p>Posee una función <code>filter</code> que recibe un predicado lógico con el que se retornan los valores de la lista que cumplan con dicha condición.</p>
+</li>
+<li><p>Posee una función <code>length</code> que devuelve la longitud del atributo <code>lista_</code>.</p>
+</li>
+<li><p>Posee una función <code>map</code> que devuelve una lista después de aplicar la función indicada por parámetros (callback).</p>
+</li>
+<li><p>Posee una función <code>reduce</code> que devuelve un valor de tipo genérico <code>T</code> después de aplicar la función indicada por parámetros (callback), según un acumulador inicial.</p>
+</li>
+<li><p>Posee una función <code>reverse</code> que devuelve la lista en orden inverso.</p>
+</li>
+<li><p>Posee una función <code>forEach</code> que devuelve un valor después de aplicar una función (instrucción) indicada.</p>
+</li>
+</ul>
+
+<a href="#pruebas" id="pruebas" style="color: inherit; text-decoration: none;">
+  <h4>Pruebas</h4>
+</a>
+<p><img src="img/Captura%20desde%202023-03-05%2018-43-22.png" alt="Ejercicio-2.1"></p>
+<p>Se han llevado a cabo una serie de pruebas con todas y cada una de las funciones desarrolladas. Por desgracia la mayoría de ellas pese a que retornar lo mismo que se le indica en el código de los tests retornan error pese a tener que dar como correcto el resultado.</p>
+<p><img src="img/Captura%20desde%202023-03-05%2018-43-22.png" alt="Ejercicio-2.2"></p>
+<p>Por ejemplo, en la prueba de la función <code>filter</code> se esperaba como resultado un <code>23</code> y se indico <code>23</code>. </p>
+<p>No obstante, se han desarrollado pruebas pese a este inconveniente en la realización de los tests, se emplea para ello los <code>console.log()</code> pertinentes en la propia función:</p>
+<p><img src="img/Captura%20desde%202023-03-05%2018-25-10.png" alt="Ejercicio-2.3"></p>
+
+<a href="#3-ampliando-la-biblioteca-musical" id="3-ampliando-la-biblioteca-musical" style="color: inherit; text-decoration: none;">
+  <h3>3. Ampliando la biblioteca musical</h3>
+</a>
+<p>Se continua con el desarrollo del programa de biblioteca músical.</p>
+<p>En esta ocasión se modificaron las funciones que retornaban directamente la tabla, haciendo, en esta ocasión, que retornen directamente el dato para poder comprobar su funcionalidad en los test.</p>
+<p>Además, tal y como se requería, se establece la clase Artista de tipo genérico <code>T</code>, como una extensión de las clases <code>Single</code> o <code>Disco</code>. Y <code>Discografía</code> como una clase genérica de tipo <code>T</code> que extiende a su vez las clases <code>Single</code> o <code>Disco</code>.</p>
+<p>Otra novedad es la creación la clase <code>Single</code>, muy similar a la ya existente <code>Disco</code>.</p>
+<p>Estos son algunas de las modifaciones que se han llevado a cabo en el programa.</p>
+<p>Las pruebas realizadas dan éxito: </p>
+<p><img src="img/Captura%20desde%202023-03-05%2018-25-10.png" alt="Ejercicio-3.1"></p>
+<p><img src="img/Captura%20desde%202023-03-05%2018-25-10.png" alt="Ejercicio-3.2"></p>
+
+<a href="#conclusiones" id="conclusiones" style="color: inherit; text-decoration: none;">
+  <h2>Conclusiones</h2>
+</a>
+<p>En esta práctica se han podido llevar a cabo una serie de tres ejercicios de nivel medio de complejidad. Dichos ejercicios nos han podido acercar al uso de clases e interfaces genéricas. Se han mejorado aspectos indicados en las pasadas correcciones, tanto a nivel de implementación de código como a nivel de informe subsanando errores.</p>
+
+<a href="#bibliografía" id="bibliografía" style="color: inherit; text-decoration: none;">
+  <h2>Bibliografía</h2>
+</a>
+<p>Para la realización de la práctica se ha requerido la consulta de los siguientes recursos:</p>
+<ul>
+<li><a href="https://ull-esit-inf-dsi-2223.github.io/prct06-generics-solid/">https://ull-esit-inf-dsi-2223.github.io/prct06-generics-solid/</a></li>
+</ul>
+</div></div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li class="current selected"><a href="modules.html">ull-<wbr/>esit-<wbr/>inf-<wbr/>dsi-<wbr/>22-<wbr/>23-<wbr/>prct06-<wbr/>generics-<wbr/>solid-<wbr/>alu0101333588</a>
+<ul>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_BasicStreamableCollection.html">ejercicio-<wbr/>1/<wbr/>Basic<wbr/>Streamable<wbr/>Collection</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_ColeccionDocumentales.html">ejercicio-<wbr/>1/<wbr/>Coleccion<wbr/>Documentales</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_ColeccionPeliculas.html">ejercicio-<wbr/>1/<wbr/>Coleccion<wbr/>Peliculas</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_ColeccionSeries.html">ejercicio-<wbr/>1/<wbr/>Coleccion<wbr/>Series</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_Documental.html">ejercicio-<wbr/>1/<wbr/>Documental</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_Pelicula.html">ejercicio-<wbr/>1/<wbr/>Pelicula</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_Serie.html">ejercicio-<wbr/>1/<wbr/>Serie</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_1_Streamable.html">ejercicio-<wbr/>1/<wbr/>Streamable</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_2_Lista.html">ejercicio-<wbr/>2/<wbr/>Lista</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_3_artista.html">ejercicio-<wbr/>3/artista</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_3_biblioteca.html">ejercicio-<wbr/>3/biblioteca</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_3_cancion.html">ejercicio-<wbr/>3/cancion</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_3_disco.html">ejercicio-<wbr/>3/disco</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_3_discografia.html">ejercicio-<wbr/>3/discografia</a></li>
+<li class="tsd-kind-module"><a href="modules/ejercicio_3_single.html">ejercicio-<wbr/>3/single</a></li></ul></li></ul></div></details></nav></div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>

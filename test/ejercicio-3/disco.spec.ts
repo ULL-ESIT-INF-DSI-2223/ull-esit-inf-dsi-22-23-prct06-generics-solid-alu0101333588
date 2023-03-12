@@ -7,12 +7,16 @@ import { Discografia } from "../../src/ejercicio-3/discografia";
 import { Disco } from "../../src/ejercicio-3/disco";
 
 describe("Test Clase Disco", () => {
+  let cancion_prueba: Cancion = new Cancion(
+    "El gallo sube",
+    3,
+    ["clasicas", "pop"],
+    true,
+    120000
+  );
+  let conjunto_canciones_prueba: Cancion[] = [cancion_prueba];
+  let disco_prueba: Disco = new Disco("Disco de oro", 1999, [cancion_prueba]);
 
-
-  let cancion_prueba: Cancion = new Cancion("El gallo sube", 3, ["clasicas", "pop"], true, 120000);
-  let conjunto_canciones_prueba : Cancion[] = [cancion_prueba];
-  let disco_prueba : Disco = new Disco ("Disco de oro", 1999, [cancion_prueba]);
-  
   it("get nombre ()", () => {
     expect(disco_prueba.nombre).to.be.eql("Disco de oro");
   });
@@ -40,5 +44,4 @@ describe("Test Clase Disco", () => {
   it("reproducciones_disco ()", () => {
     expect(disco_prueba.reproducciones_disco()).to.be.eql(120000);
   });
-
 });

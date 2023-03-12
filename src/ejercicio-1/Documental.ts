@@ -1,7 +1,7 @@
 import { fecha } from "./Serie";
 
 /**
- * Interfaz 'Documental' 
+ * Interfaz 'Documental'
  * @param titulo_ de la documental
  * @param fecha_ de la documental
  * @param sinopsis_ de la documental
@@ -10,10 +10,10 @@ import { fecha } from "./Serie";
  * @param duracion_ de la documental
  */
 export interface Documental {
-    titulo_ : string;
-    fecha_ : fecha;
-    sinopsis_ :string;
-    tematica_ : string;
-    plataforma_: string;
-    duracion_ : number;
+  titulo_: string;
+  fecha_: fecha;
+  sinopsis_: string;
+  tematica_: string;
+  plataforma_: string;
+  duracion_: number;
 }
