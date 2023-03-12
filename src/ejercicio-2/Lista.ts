@@ -13,13 +13,20 @@ export class Lista<T> {
         this.lista_ = lista;
     }
 
+    get get_lista () {
+        return this.lista_;
+    }
+
+    elemento_lista (n : number) : T {
+        return this.lista_[n];
+    }
+
     /**
     * Función 'append' para añadir los elementos de una lista a otra
     * @param lista2 : elemento de la clase 'Lista<T>'
     * @return array de tipo genérico T
     */
     append (lista2 : Lista<T>) : T[] {
-        //for (let i : number = 0; i < lista2.lista_.length; i++) {
         let i : number = 0;
         while (lista2.lista_[i]) { 
             this.lista_.push(lista2.lista_[i]);
@@ -40,16 +47,11 @@ export class Lista<T> {
         while (listas[i]) {
             let j : number = 0;
             while (listas[i].lista_[j]) {
-                this.lista_.push(listas[i].lista_[j]);
+                lista_concatenada.push(listas[i].elemento_lista(j));
                 j++;
             }
             i++;
         }
-        /*for (let i : number = 0; i < listas.length; i++) {
-            for (let j : number = 0; j < listas[i].lista_.length; j++) {
-                lista_concatenada.push(listas[i].lista_[j]);
-            }
-        }*/
         return lista_concatenada;
     }
 
@@ -69,12 +71,6 @@ export class Lista<T> {
             i++;
         }
 
-        /*for (let i : number = 0; i < this.lista_.length; i++) {
-           if (predicado_logico(this.lista_[i])) {
-            lista_filtrada.push(this.lista_[i]);
-           }
-        }*/
-
         return lista_filtrada;
     }
 
@@ -87,7 +83,6 @@ export class Lista<T> {
         while (this.lista_[i]) {
             i++;
         }
-        //console.log(`prueba: ${i}`);
         return i;
     }
 
@@ -130,7 +125,7 @@ export class Lista<T> {
     */
     reverse () : T[] {
         let lista_invertida  : T[] = [];
-        let i : number = this.length();
+        let i : number = this.length()-1;
         while (this.lista_[i]) {
             lista_invertida.push(this.lista_[i]);
             i--;
@@ -156,3 +151,20 @@ export class Lista<T> {
 
     
 }
+
+let lista_prueba : Lista<number> = new Lista<number> ([20, 21, 22, 23, 24, 25, 26, 27]);
+let lista_prueba_2 : Lista<number> = new Lista<number> ([30, 31, 32, 33, 34, 35, 36, 37]);
+let lista_prueba_3 : Lista<number> = new Lista<number> ([40, 41, 42, 43, 44, 45, 46, 47]);
+let lista_prueba_4 : Lista<number> = new Lista<number> ([50, 51, 52, 53, 54, 55, 56, 57]);
+console.log(`append: [${lista_prueba.append(lista_prueba_2)}]`);
+
+let listas_para_concatenar: Lista<number>[] = [];
+listas_para_concatenar.push(lista_prueba_2);
+listas_para_concatenar.push(lista_prueba_3);
+listas_para_concatenar.push(lista_prueba_4);
+console.log(`concatenate(): [${lista_prueba_2.concatenate(listas_para_concatenar)}]`);
+console.log(`filter(): [${lista_prueba.filter((elemento) => elemento === 20+3)}]`);
+console.log(`length(): [${lista_prueba_2.length()}]`);
+console.log(`map(): [${lista_prueba_2.map((elemento) => elemento * 2)}]`);
+console.log(`reduce(): [${lista_prueba_2.reduce((acumulador, elemento) => acumulador + elemento, 2)}]`);
+console.log(`reverse(): [${lista_prueba_2.reverse()}]`);
