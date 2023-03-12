@@ -126,7 +126,12 @@ Se desarrollan cuatro interfaces y cuatro clases:
 
 A continuación, se procede a mostrar el resultado de las diferentes pruebas llevadas a cabo en las funciones de todas las clases que se han empleado en este ejercicio:
 
-![Ejercicio-1](img/Captura%20desde%202023-03-12%2020-05-24.png)
+![Ejercicio-1.1](master/img/Captura%20desde%202023-03-12%2020-05-24.png)
+![Ejercicio-1.1](/master/img/Captura%20desde%202023-03-12%2020-05-24.png)
+![Ejercicio-1.1](/blob/master/img/Captura%20desde%202023-03-12%2020-05-24.png)
+![Ejercicio-1.1](/img/Captura%20desde%202023-03-12%2020-05-24.png)
+![Ejercicio-1.1](/Captura%20desde%202023-03-12%2020-05-24.png)
+![Ejercicio-1.1](../img/Captura%20desde%202023-03-12%2020-05-24.png)
 
 
 ### 2. Implementación de una lista y sus operaciones
