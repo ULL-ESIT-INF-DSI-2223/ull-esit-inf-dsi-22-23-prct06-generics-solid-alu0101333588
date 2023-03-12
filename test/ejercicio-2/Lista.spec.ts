@@ -45,4 +45,10 @@ describe(" Tests Lista ", () => {
         expect(lista_prueba_2.reverse()).to.be.equal([37,36,35,34,33,32,31,30]);
     });
     
+    let numero : number = 1;
+
+    it("reverse()", () => {
+        expect(lista_prueba_2.forEach((elemento) => numero *= elemento)).to.be.equal(1556675366400);
+    });
+    
 });
