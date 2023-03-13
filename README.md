@@ -1,4 +1,5 @@
 ###### Desarrollo de Sistemas Informáticos | Práctica 06 | Andrés Hernández Ortega
+...
 # Práctica 6 - Clases e interfaces genéricas. Principios SOLID
 
 [![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588/badge.svg?branch=master)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct06-generics-solid-alu0101333588?branch=master)
