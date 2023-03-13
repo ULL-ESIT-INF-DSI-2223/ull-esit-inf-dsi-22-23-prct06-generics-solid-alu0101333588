@@ -129,7 +129,7 @@ A continuación, se procede a mostrar el resultado de las diferentes pruebas lle
 ![Ejercicio-1.1](master/img/Captura%20desde%202023-03-12%2020-05-24.png)
 ![Ejercicio-1.2](/master/img/Captura%20desde%202023-03-12%2020-05-24.png)
 ![Ejercicio-1.3](/blob/master/img/Captura%20desde%202023-03-12%2020-05-24.png)
-![Ejercicio-1.4](./img/Captura%20desde%202023-03-12%2020-05-24.png)
+![Ejercicio-1.1112](./img/Captura%20desde%202023-03-12%2020-05-24.png)
 ![Ejercicio-1.5](/Captura%20desde%202023-03-12%2020-05-24.png)
 ![Ejercicio-1.6](../img/Captura%20desde%202023-03-12%2020-05-24.png)
 
